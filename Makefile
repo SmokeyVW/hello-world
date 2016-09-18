@@ -7,8 +7,11 @@ main.o:	main.c
 
 build:	main
 
+dev:
+	wish my_app.tcl some args go here
+
 run:	main
-	./main -foo
+	./main -foo -bar
 
 clean:
 	rm -f *.o *~

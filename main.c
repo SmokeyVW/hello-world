@@ -16,11 +16,11 @@ int main (int argc, char **argv)
       continue;
     }
     fprintf(stdout,"unknown arg: '%s'\n", argv[i]);
-    fprintf(stdout,"stopping on error\n");
+    fprintf(stdout,"%s: stopping on error\n",argv[0]);
     exit(1);
   }
 
-  fprintf(stdout,"normal exit\n");
+  fprintf(stdout,"%s: normal exit\n",argv[0]);
   exit(0);
 }
 
